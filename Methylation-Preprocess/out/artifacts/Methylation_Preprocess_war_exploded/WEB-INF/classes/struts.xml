@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <package name="MAS" extends="struts-default" >
+        <action name="Load_first1" class="mas.action.LoadAction" method="Load_exe">
+            <result name="success">/champ.jsp</result>
+        </action>
+
+        <action name="PBC" class="mas.action.LoadAction" method="PBC_exe">
+            <result name="success">/champ.jsp</result>
+        </action>
+
+        <action name="SWAN" class="mas.action.LoadAction" method="SWAN_exe">
+            <result name="success">/champ.jsp</result>
+        </action>
+
+        <action name="FunctionalNormalize" class="mas.action.LoadAction" method="FunctionalNormalize_exe">
+            <result name="success">/champ.jsp</result>
+        </action>
+
+    </package>
+</struts>
