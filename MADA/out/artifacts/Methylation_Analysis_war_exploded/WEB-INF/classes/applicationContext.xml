@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-autowire="byType">
+    <!-- NEW -->
+    <bean id="loadExecute" class="mas.execute.LoadExecute"></bean>
+    <bean id="loadService" class="mas.service.LoadService"></bean>
+
+    <bean id="pbcExecute" class="mas.execute.PBCExecute"></bean>
+    <bean id="pbcService" class="mas.service.PBCService"></bean>
+
+    <bean id="swanExecute" class="mas.execute.SWANExecute"></bean>
+    <bean id="swanService" class="mas.service.SWANService"></bean>
+
+    <bean id="functionalnormalizeExecute" class="mas.execute.FunctionalNormalizeExecute"></bean>
+    <bean id="functionalnormalizeService" class="mas.service.FunctionalNormalizeService"></bean>
+
+    <bean id="illuminaExecute" class="mas.execute.IlluminaExecute"></bean>
+    <bean id="illuminaService" class="mas.service.IlluminaService"></bean>
+
+    <bean id="noobExecute" class="mas.execute.NoobExecute"></bean>
+    <bean id="noobService" class="mas.service.NoobService"></bean>
+
+    <bean id="sqnExecute" class="mas.execute.SQNExecute"></bean>
+    <bean id="sqnService" class="mas.service.SQNService"></bean>
+
+    <bean id="rawExecute" class="mas.execute.RawExecute"></bean>
+    <bean id="rawService" class="mas.service.RawService"></bean>
+
+    <bean id="limmaExecute" class="mas.execute.LimmaExecute"></bean>
+    <bean id="limmaService" class="mas.service.LimmaService"></bean>
+
+    <bean id="dmrcateExecute" class="mas.execute.DMRCateExecute"></bean>
+    <bean id="dmrcateService" class="mas.service.DMRCateService"></bean>
+
+    <bean id="bumphunterExecute" class="mas.execute.BumphunterExecute"></bean>
+    <bean id="bumphunterService" class="mas.service.BumphunterService"></bean>
+
+    <bean id="lassoExecute" class="mas.execute.LassoExecute"></bean>
+    <bean id="lassoService" class="mas.service.LassoService"></bean>
+
+    <bean id="seqlmExecute" class="mas.execute.SeqlmExecute"></bean>
+    <bean id="seqlmService" class="mas.service.SeqlmService"></bean>
+
+    <bean id="goExecute" class="mas.execute.GOExecute"></bean>
+    <bean id="goService" class="mas.service.GOService"></bean>
+
+    <bean id="keggExecute" class="mas.execute.KEGGExecute"></bean>
+    <bean id="keggService" class="mas.service.KEGGService"></bean>
+
+    <bean id="dasenExecute" class="mas.execute.DasenExecute"></bean>
+    <bean id="dasenService" class="mas.service.DasenService"></bean>
+
+    <bean id="pcaExecute" class="mas.execute.PCAExecute"></bean>
+    <bean id="pcaService" class="mas.service.PCAService"></bean>
+
+    <bean id="cluster1Execute" class="mas.execute.Cluster1Execute"></bean>
+    <bean id="cluster1Service" class="mas.service.Cluster1Service"></bean>
+
+    <bean id="cluster2Execute" class="mas.execute.Cluster2Execute"></bean>
+    <bean id="cluster2Service" class="mas.service.Cluster2Service"></bean>
+
+    <bean id="dmpFinderExecute" class="mas.execute.DmpFinderExecute"></bean>
+    <bean id="dmpFinderService" class="mas.service.DmpFinderService"></bean>
+
+    <bean id="samrExecute" class="mas.execute.SamrExecute"></bean>
+    <bean id="samrService" class="mas.service.SamrService"></bean>
+
+    <bean id="batchExecute" class="mas.execute.BatchExecute"></bean>
+    <bean id="batchService" class="mas.service.BatchService"></bean>
+
+    <!-- NEW -->
+
+    <bean id="soapExecute" class="mas.execute.SOAPExecute"></bean>
+    <bean id="soapService" class="mas.service.SOAPService"></bean>
+
+
+</beans>

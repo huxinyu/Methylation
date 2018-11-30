@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Methylation_Analysis:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Methylation_Analysis_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Methylation_Analysis" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Struts 2-2.5.13" />
+          <element id="library" level="project" name="Spring-4.3.13.RELEASE" />
+          <element id="library" level="project" name="Spring MVC-4.3.13.RELEASE" />
+          <element id="library" level="project" name="Hibernate 4.2.2-4.2.2" />
+          <element id="library" level="project" name="log4j-core-2.9.1" />
+          <element id="library" level="project" name="ant-1.6.5" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Methylation_Analysis/web/Web" />
+    </root>
+  </artifact>
+</component>

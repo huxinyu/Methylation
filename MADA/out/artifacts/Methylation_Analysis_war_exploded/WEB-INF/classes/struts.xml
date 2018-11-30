@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.ui.theme" value="simple" />
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    <constant name="struts.multipart.maxSize" value="2000000000"/>
+
+    <package name="mas" extends="struts-default" strict-method-invocation="false">
+        <global-allowed-methods>regex:.*</global-allowed-methods>
+
+        <!--NEW-->
+        <action name="BMIQ" class="mas.action.LoadAction" method="Load_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools_initial.jsp</result>
+        </action>
+
+        <action name="PBC" class="mas.action.PBCAction" method="PBC_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools_initial.jsp</result>
+        </action>
+
+        <action name="SWAN" class="mas.action.SWANAction" method="SWAN_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools_initial.jsp</result>
+        </action>
+
+        <action name="FunctionalNormalize" class="mas.action.FunctionalNormalizeAction" method="FunctionalNormalize_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools_initial.jsp</result>
+        </action>
+
+        <action name="Illumina" class="mas.action.IlluminaAction" method="Illumina_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools_initial.jsp</result>
+        </action>
+
+        <action name="Noob" class="mas.action.NoobAction" method="Noob_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools_initial.jsp</result>
+        </action>
+
+        <action name="SQN" class="mas.action.SQNAction" method="SQN_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools_initial.jsp</result>
+        </action>
+
+        <action name="Dasen" class="mas.action.DasenAction" method="Dasen_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools_initial.jsp</result>
+        </action>
+
+        <action name="RAW" class="mas.action.RawAction" method="RAW_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools_initial.jsp</result>
+        </action>
+
+        <action name="Limma" class="mas.action.LimmaAction" method="Limma_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools_initial.jsp</result>
+        </action>
+
+        <action name="DMRCate" class="mas.action.DMRCateAction" method="DMRCate_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools_initial.jsp</result>
+        </action>
+
+        <action name="Bumphunter" class="mas.action.BumphunterAction" method="Bumphunter_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools_initial.jsp</result>
+        </action>
+
+        <action name="Lasso" class="mas.action.LassoAction" method="Lasso_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools_initial.jsp</result>
+        </action>
+
+        <action name="Seqlm" class="mas.action.SeqlmAction" method="Seqlm_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools_initial.jsp</result>
+        </action>
+
+        <action name="customWorkflow_exe" class="mas.action.WorkFlowAction" method="customWorkflow">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./WorkFlow.jsp</result>
+        </action>
+
+        <action name="GO" class="mas.action.GOAction" method="GO_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./MEME.jsp</result>
+        </action>
+
+        <action name="KEGG" class="mas.action.KEGGAction" method="KEGG_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./MEME.jsp</result>
+        </action>
+
+        <action name="PCA" class="mas.action.PCAAction" method="PCA_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./MEME.jsp</result>
+        </action>
+
+        <action name="Cluster1" class="mas.action.Cluster1Action" method="Cluster1_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./MEME.jsp</result>
+        </action>
+
+        <action name="Cluster2" class="mas.action.Cluster2Action" method="Cluster2_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./MEME.jsp</result>
+        </action>
+        <action name="dmpFinder" class="mas.action.DmpFinderAction" method="Dmpfinder_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./MEME.jsp</result>
+        </action>
+
+        <action name="samr" class="mas.action.SamrAction" method="Samr_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./MEME.jsp</result>
+        </action>
+
+        <action name="batch" class="mas.action.BatchAction" method="batch_exe">
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./MEME.jsp</result>
+        </action>
+
+
+
+
+        <!--NEW-->
+
+        <action name="SOAP_exe" class="mas.action.SOAPAction" method="SOAP_exe">
+            <interceptor-ref name="fileUpload">
+                <param name="allowedTypes">text/plain</param>
+                <!--<param name="fileUpload.allowedExtensions">txt,fasta,fastq,fa,fq</param>-->
+                <param name="maximumSize">2000000000</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"/>
+            <result name="success">./RecentJob.jsp</result>
+            <result name="input">./Tools.jsp</result>
+        </action>
+
+        <action name="login_user" class="mas.action.LoginAction" method="Login">
+            <interceptor-ref name="fileUpload">
+                <param name="allowedTypes">text/plain</param>
+                <!--<param name="fileUpload.allowedExtensions">txt,fasta,fastq,fa,fq</param>-->
+                <param name="maximumSize">2000000000</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"/>
+            <result name="success">./home.jsp</result>
+            <result name="input">./home.jsp</result>
+        </action>
+
+        <action name="register" class="mas.action.RegisterAction" method="Register">
+            <result name="success">./home.jsp</result>
+            <result name="input">./home.jsp</result>
+        </action>
+
+        <action name="Exit" class="mas.action.Exit" method="Exit">
+            <result name="success">./home_initial.jsp</result>
+        </action>
+
+        <action name="demo_workflow_exe" class="mas.action.TestAction" method="Test">
+            <interceptor-ref name="fileUpload">
+                <param name="allowedTypes">text/plain</param>
+                <!--<param name="fileUpload.allowedExtensions">txt,fasta,fastq,fa,fq</param>-->
+                <param name="maximumSize">2000000000</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"/>
+            <result name="success">./WorkFlow.jsp</result>
+            <result name="input">./WorkFlow.jsp</result>
+        </action>
+
+
+        <action name="fileLoad" class="mas.action.DownloadFile" method="Download">
+            <result type="stream">
+                   <param name="contentType">application/x-zip-compressed</param>
+                    <!--下载时，客户端显示的下载的文件名 -->
+                    <param name="contentDisposition"> attachment; filename=${fileName}</param>
+                    <!-- 数据的缓冲大小 -->
+                    <param name="bufferSize">1024</param>
+            </result>
+        </action>
+    </package>
+</struts>
