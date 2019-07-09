@@ -12,4 +12,4 @@ We have a help documentation with two use cases available [here](http://compubio
 If you are having issues, please feel free to send an e-mail to Xinyu Hu (174611152@csu.edu.cn).
 
 # License <br>
-Copyright © 2018 - CSU-Bioinformatics Group | All Rights Reserved banquan
+Copyright © 2018 - CSU-Bioinformatics Group | All Rights Reserved
